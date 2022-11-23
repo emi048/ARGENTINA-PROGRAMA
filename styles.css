@@ -1,0 +1,104 @@
+@import url(https://fonts.googleapis.com/css2?family=Montserrat&display=swap%27);
+
+
+
+body{
+    font-family: 'Montserrat', sans-serif;
+}
+
+#menu a {
+    font-size: 16px;
+    font-weight: bold;
+    color: #3f3f3f;
+}
+
+#menu form > bottom{
+    font-size: 16px;
+    font-weight: bold;
+}
+
+.carousel-inner{
+    max-height: 30rem;
+}
+
+.servicio-fila{
+    text-align: center;
+    width: 100%;
+}
+
+.img-c{
+    border-radius: 10%;
+}
+
+.icono-wrap{
+    flex: wrap;
+    justify-content: center;
+}
+
+.img-fluid{
+    max-height: 40rem;
+    width: 90%;
+}
+
+#local{
+    background: #f3f3f3;
+    padding-bottom: 300px;
+    display: flex;
+    justify-content: center;
+}
+
+.wrapper{
+    width: 50%;
+    margin-left: 100px;
+    padding-top: 40px;
+}
+
+.mapa{
+    padding-left: 100px;
+    padding-top: 50px;
+}
+
+#numeros-local div{
+    padding: 0 20px 0 0;
+    height: 48px;
+
+}
+
+#numeros-local div:not(:last-child){
+    border-right: 2px solid #3f3f3f;
+}
+
+#numeros-local div:not(:first-child){
+    padding-left: 20px;
+}
+
+#numeros-local p{
+    margin: 0;
+}
+
+#bg-contacto{
+    position: relative;
+    top: -130px;
+}
+
+#seccion-contacto{
+    background-color: #1b2a4e;
+    min-height: 500px;
+    position: relative;
+}
+
+#contenedor-formulario
+{
+    position: absolute;
+    top: 30%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    background: #fbfafa;
+    border-radius: 5px;
+    max-width: 500px;
+    padding: 10px
+}
+
+#titulo-formulario{
+    color: #3f3f3f;
+}
