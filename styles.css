@@ -6,10 +6,62 @@ body{
     font-family: 'Montserrat', sans-serif;
 }
 
+.banner{
+    position: relative;
+    widows: 100%;
+    height: calc(108vh - 50px);
+    background-image: url(img/banner.jpg);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    
+}
+
+.capa{
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    top: 0;
+    left: 0;
+    background: rgba(0, 0, 0, 0.75);
+}
+
+.contenido{
+    margin: 0;
+    padding: 0;
+    width: 100%;
+    height: 100%;
+    color: white;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-content: center;
+}
+
+.contenido h1{
+    margin: 20px;
+    font-size: 30px;
+    color: white;
+    opacity: 5.5;
+}
+
+.contenido p{
+    margin: 20px;
+    font-size: 15px;
+}
+
+.nav-item{
+    margin-right: 30px;
+}
+
+
+
+
 #menu a {
     font-size: 16px;
     font-weight: bold;
-    color: #3f3f3f;
+    color: #dfdfdf;
 }
 
 #menu form > bottom{
@@ -54,10 +106,6 @@ body{
     padding-top: 40px;
 }
 
-.mapa{
-    padding-left: 100px;
-    padding-top: 50px;
-}
 
 #numeros-local div{
     padding: 0 20px 0 0;
@@ -104,4 +152,178 @@ body{
     color: #3f3f3f;
 }
 
+.html-color{
+    color: orangered;
+}
 
+.css-color{
+    color: #2494f4;
+}
+
+.js-color{
+    color: #fbdb04;
+}
+
+.c-color{
+    color: #943cab;
+}
+
+
+.inner{
+    padding-top: 30px;
+}
+
+.header{
+    text-align: center;
+    padding: 1rem;
+    position: relative;
+}
+
+.header h1{
+    font-weight: bold;
+}
+
+/*.header::after{
+    content: "";
+    position: absolute;
+    bottom: 0;
+    left: 50%;
+    transform: translateX(-50%);
+    height: 4px;
+    width: 100px;
+    background-color: #013869;
+} */
+
+.container{
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    grid-gap: 1rem;
+    padding: 1rem 80px;
+    font-size: 1.2em;
+}
+
+.skill-box{
+    padding: 1em;
+    color: rgb(72, 72, 72);
+    cursor: pointer;
+}
+
+
+.skill-title{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: .5em;
+    margin-bottom: .5em;
+    position: relative;
+    
+}
+
+.img{
+    width: 90px;
+    height: 90px;
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    transition: .5s;
+}
+
+.skill-icon{
+    width: 70px;
+    padding-bottom: 30px;
+}
+
+.skill-title h3{
+    color: #3f3f3f;
+    margin-top: .5em;
+    font-weight: bold;
+}
+
+.skill-box:hover > .skill-title:after, .skill-box:hover > .skill-title:before{
+    width: 35px;
+}
+
+.skill-box:hover .img{
+    transform: translateY(-10px);
+
+}
+
+
+.skill-title::after{
+    content: '';
+    position: absolute;
+    bottom: 0;
+    right: 50%;
+    width: 0;
+    height: 4px;
+    border-radius: 2px 0 0 2px;
+    background-color: #013869;
+    transition: .5s;
+}
+.skill-title::before{
+    content: '';
+    position: absolute;
+    bottom: 0;
+    left: 50%;
+    width: 0;
+    height: 4px;
+    border-radius: 0 2px 2px 0;
+    background-color: #013869;
+    transition: .5s;
+}
+
+
+.barra{
+    height: 70px;
+    width: 400px;
+    text-align: center;
+    padding: 20px;
+    margin: 20px;
+}
+
+.barra h3{
+    font-weight: bold;
+    font-size: 20px;
+}
+
+.idiomas p{
+    text-align: center;
+    width: 500px;
+}
+
+
+.idiomas{
+    display: grid;
+    place-items: center;
+    padding-top: 40px;
+    
+}
+
+.progress-bar{
+    background-color: #013869;
+
+}
+
+
+@media screen and (max-width:800px){
+    body{
+        justify-content: center;
+    }
+    .container{
+        display: block;
+    }
+
+    .idiomas{
+        justify-content: center;
+    }
+
+    .idiomas > p{
+        width: 400px;
+    }
+
+
+}
