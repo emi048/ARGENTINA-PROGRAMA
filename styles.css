@@ -341,7 +341,7 @@ body{
     align-items: center;
 }
 
-.circular-progress{
+.circular-progress, .circular-progressDOS, .circular-progressTRES{
     position: relative;
     height:  250px;
     width: 250px;
@@ -352,7 +352,7 @@ body{
     justify-content: center;
 }
 
-.circular-progress::before{
+.circular-progress::before, .circular-progressDOS::before, .circular-progressTRES::before{
     content: "";
     position: absolute;
     height: 210px;
@@ -361,7 +361,7 @@ body{
     background-color: #fff;
 }
 
-.progress-value{
+.progress-value, .progress-valueDOS, .progress-valueTRES{
     position: relative;
     font-size: 50px;
     font-weight: 100px;
