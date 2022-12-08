@@ -1,3 +1,4 @@
+// --NAV BAR-- // // --NAV BAR-- // // --NAV BAR-- // // --NAV BAR-- //
 let nav = document.querySelector('nav');
 
 window.addEventListener('scroll', function(){
@@ -8,6 +9,14 @@ window.addEventListener('scroll', function(){
         nav.classList.remove('bg-dark', 'shadow');
     }
 })
+// --NAV BAR-- // // --NAV BAR-- // // --NAV BAR-- // // --NAV BAR-- //
+
+
+
+
+
+
+// --IDIOMAS-- // // --IDIOMAS-- // // --IDIOMAS-- // // --IDIOMAS-- // // --IDIOMAS-- //
 
 //español
 let ciruclarProgress = document.querySelector(".circular-progress"), progressValue = document.querySelector(".progress-value");
@@ -59,6 +68,12 @@ let progress_3 = setInterval(() => {
         clearInterval(progress_3)
     }
 }, speed_);
+// --IDIOMAS-- // // --IDIOMAS-- // // --IDIOMAS-- // // --IDIOMAS-- // // --IDIOMAS-- //
+
+
+
+
+
 
 
 
