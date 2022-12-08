@@ -56,8 +56,6 @@ body{
 }
 
 
-
-
 #menu a {
     font-size: 16px;
     font-weight: bold;
@@ -106,7 +104,7 @@ body{
     padding-top: 40px;
 }
 
-
+/*
 #numeros-local div{
     padding: 0 20px 0 0;
     height: 48px;
@@ -152,6 +150,8 @@ body{
     color: #3f3f3f;
 }
 
+*/
+
 .html-color{
     color: orangered;
 }
@@ -177,6 +177,7 @@ body{
     text-align: center;
     padding: 1rem;
     position: relative;
+    padding-top: 50px;
 }
 
 .header h1{
@@ -210,6 +211,8 @@ body{
     color: rgb(72, 72, 72);
     cursor: pointer;
 }
+
+
 
 
 .skill-title{
@@ -276,7 +279,7 @@ body{
     transition: .5s;
 }
 
-
+/*
 .barra{
     height: 70px;
     width: 400px;
@@ -289,6 +292,15 @@ body{
     font-weight: bold;
     font-size: 20px;
 }
+
+
+.idioma1{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+
 
 .idiomas p{
     text-align: center;
@@ -307,6 +319,64 @@ body{
     background-color: #013869;
 
 }
+*/
+
+
+
+/* ---- IDIOMAS ---- */
+
+.main{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.contenedor1{
+    display: flex;
+    width: 420px;
+    padding: 50px 0;
+    border-radius: 8px;
+    background: #fff;
+    row-gap: 30px;
+    flex-direction: column;
+    align-items: center;
+}
+
+.circular-progress{
+    position: relative;
+    height:  250px;
+    width: 250px;
+    border-radius: 50%;
+    background: conic-gradient(rgba(1,56,105,1) 3.6deg, white 0deg); 
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.circular-progress::before{
+    content: "";
+    position: absolute;
+    height: 210px;
+    width: 210px;
+    border-radius: 50%;
+    background-color: #fff;
+}
+
+.progress-value{
+    position: relative;
+    font-size: 50px;
+    font-weight: 100px;
+    color: black;
+}
+
+.text{
+    font-size: 30px;
+    font-weight: 00px;
+    color: #606060;
+}
+
+
+
+
 
 
 @media screen and (max-width:800px){
