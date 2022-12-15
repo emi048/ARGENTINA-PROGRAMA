@@ -20,7 +20,7 @@ window.addEventListener('scroll', function(){
 
 //español
 let ciruclarProgress = document.querySelector(".circular-progress"), progressValue = document.querySelector(".progress-value");
-let progressStartValue = 0, progressEndValue = 100, speed = 50;
+let progressStartValue = 0, progressEndValue = 100, speed = 10;
 
 let progress = setInterval(() => {
     progressStartValue++
@@ -40,7 +40,7 @@ let circularProgress2 = document.querySelector(".circular-progressDOS"),
 
 let progressStartValue_ = 0,
     progressEndValue_ = 50,
-    speed_ = 50;
+    speed_ = 10;
 
 let progress_ = setInterval(() => {
     progressStartValue_++
@@ -58,7 +58,7 @@ let circularProgress3 = document.querySelector(".circular-progressTRES"),
 
 let progressStartValue_3 = 0,
     progressEndValue_3 = 30,
-    speed_3 = 50;
+    speed_3 = 10;
 
 let progress_3 = setInterval(() => {
     progressStartValue_3++
@@ -67,8 +67,26 @@ let progress_3 = setInterval(() => {
     if (progressStartValue_3 == progressEndValue_3){
         clearInterval(progress_3)
     }
-}, speed_);
+}, speed_3);
 // --IDIOMAS-- // // --IDIOMAS-- // // --IDIOMAS-- // // --IDIOMAS-- // // --IDIOMAS-- //
+
+
+//TIPEADO DEL PRINCIPIO//
+let i, text;
+i= 0;
+text = "Bienvenidos a mi Portfolio Web";
+
+function typing(){
+    if (i < text.length){
+        document.getElementById("text").innerHTML += text.charAt(i);
+        i++;
+        setTimeout(typing,70);
+    }
+}
+typing();
+
+//TIPEADO DEL PRINCIPIO//
+
 
 
 
