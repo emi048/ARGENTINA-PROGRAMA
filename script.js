@@ -1,17 +1,17 @@
 // --NAV BAR-- // // --NAV BAR-- // // --NAV BAR-- // // --NAV BAR-- //
 let nav = document.querySelector('nav');
-
 window.addEventListener('scroll', function(){
     if (window.pageYOffset > 600){
-        nav.classList.add('bg-dark', 'shadow');
+        nav.classList.add('bg-dark', 'transition');
+        setTimeout(function(){
+            nav.classList.add('shadow');
+        }, 100);
     }
     else{
-        nav.classList.remove('bg-dark', 'shadow');
+        nav.classList.remove('bg-dark', 'shadow', 'transition');
     }
 })
 // --NAV BAR-- // // --NAV BAR-- // // --NAV BAR-- // // --NAV BAR-- //
-
-
 
 
 
@@ -52,6 +52,8 @@ let progress_ = setInterval(() => {
 }, speed_);
 
 
+
+
 //frances
 let circularProgress3 = document.querySelector(".circular-progressTRES"),
     progressValue3 = document.querySelector(".progress-valueTRES");
@@ -74,7 +76,7 @@ let progress_3 = setInterval(() => {
 //TIPEADO DEL PRINCIPIO//
 let i, text;
 i= 0;
-text = "Bienvenidos a mi Portfolio Web";
+text = "Bienvenido a mi Portfolio Web";
 
 function typing(){
     if (i < text.length){
@@ -84,8 +86,9 @@ function typing(){
     }
 }
 typing();
-
 //TIPEADO DEL PRINCIPIO//
+
+
 
 
 

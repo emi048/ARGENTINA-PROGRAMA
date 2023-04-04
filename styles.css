@@ -6,6 +6,37 @@ body{
     font-family: 'Montserrat', sans-serif;
 }
 
+/*NAV BAR*//*NAV BAR*//*NAV BAR*//*NAV BAR*//*NAV BAR*//*NAV BAR*//*NAV BAR*/
+.dropdown-menu {
+    background-color: rgba(0, 0, 0, 0.9);
+}
+.dropdown-menu a:hover {
+    background-color: #3f3f3f;
+}
+nav.transition { 
+    transition-duration: 0.5s;
+}
+
+.nav-item{
+    margin-right: 30px;
+}
+#menu a {
+    font-size: 16px;
+    font-weight: bold;
+    color: #dfdfdf;
+}
+#menu form > bottom{
+    font-size: 16px;
+    font-weight: bold;
+    
+}
+/*NAV BAR*//*NAV BAR*//*NAV BAR*//*NAV BAR*//*NAV BAR*//*NAV BAR*//*NAV BAR*/
+
+
+
+
+
+/*BANNER*//*BANNER*//*BANNER*//*BANNER*//*BANNER*//*BANNER*//*BANNER*//*BANNER*/
 .banner{
     position: relative;
     widows: 100%;
@@ -16,7 +47,6 @@ body{
     background-size: cover;
     
 }
-
 .capa{
     width: 100%;
     height: 100%;
@@ -25,7 +55,6 @@ body{
     left: 0;
     background: rgba(0, 0, 0, 0.75);
 }
-
 .contenido{
     margin: 0;
     padding: 0;
@@ -38,137 +67,28 @@ body{
     justify-content: center;
     align-content: center;
 }
-
 .contenido h1{
     margin: 20px;
     font-size: 30px;
     color: white;
     opacity: 5.5;
 }
-
 .contenido p{
     margin: 20px;
     font-size: 15px;
 }
-
-.nav-item{
-    margin-right: 30px;
+.text{
+    font-size: 25px;
+    font-weight: 20px;
+    color: #050505;
 }
+/*BANNER*//*BANNER*//*BANNER*//*BANNER*//*BANNER*//*BANNER*//*BANNER*//*BANNER*/
 
 
-#menu a {
-    font-size: 16px;
-    font-weight: bold;
-    color: #dfdfdf;
-}
-
-#menu form > bottom{
-    font-size: 16px;
-    font-weight: bold;
-    
-}
-
-.carousel-inner{
-    max-height: 30rem;
-}
-
-.servicio-fila{
-    text-align: center;
-    width: 100%;
-}
-
-.img-c{
-    border-radius: 10%;
-}
-
-.icono-wrap{
-    flex: wrap;
-    justify-content: center;
-}
-
-.img-fluid{
-    max-height: 40rem;
-    width: 90%;
-}
-
-#local{
-    background: #f3f3f3;
-    padding-bottom: 300px;
-    display: flex;
-    justify-content: center;
-}
-
-.wrapper{
-    width: 50%;
-    margin-left: 100px;
-    padding-top: 40px;
-}
-
-/*
-#numeros-local div{
-    padding: 0 20px 0 0;
-    height: 48px;
-
-}
-
-#numeros-local div:not(:last-child){
-    border-right: 2px solid #3f3f3f;
-}
-
-#numeros-local div:not(:first-child){
-    padding-left: 20px;
-}
-
-#numeros-local p{
-    margin: 0;
-}
-
-#bg-contacto{
-    position: relative;
-    top: -130px;
-}
-
-#seccion-contacto{
-    background-color: #1b2a4e;
-    min-height: 500px;
-    position: relative;
-}
-
-#contenedor-formulario
-{
-    position: absolute;
-    top: 30%;
-    left: 50%;
-    transform: translate(-50%, -50%);
-    background: #fbfafa;
-    border-radius: 5px;
-    max-width: 500px;
-    padding: 10px
-}
-
-#titulo-formulario{
-    color: #3f3f3f;
-}
-
-*/
-
-.html-color{
-    color: orangered;
-}
-
-.css-color{
-    color: #2494f4;
-}
-
-.js-color{
-    color: #fbdb04;
-}
-
-.c-color{
-    color: #943cab;
-}
 
 
+
+/*HABILIDADES*//*HABILIDADES*//*HABILIDADES*//*HABILIDADES*//*HABILIDADES*//*HABILIDADES*/
 .inner{
     padding-top: 30px;
 }
@@ -179,22 +99,9 @@ body{
     position: relative;
     padding-top: 50px;
 }
-
 .header h1{
     font-weight: bold;
 }
-
-/*.header::after{
-    content: "";
-    position: absolute;
-    bottom: 0;
-    left: 50%;
-    transform: translateX(-50%);
-    height: 4px;
-    width: 100px;
-    background-color: #013869;
-} */
-
 .container{
     display: grid;
     grid-template-columns: repeat(3, 1fr);
@@ -205,16 +112,11 @@ body{
     padding: 1rem 80px;
     font-size: 1.2em;
 }
-
 .skill-box{
     padding: 1em;
     color: rgb(72, 72, 72);
     cursor: pointer;
 }
-
-
-
-
 .skill-title{
     display: flex;
     flex-direction: column;
@@ -224,7 +126,6 @@ body{
     position: relative;
     
 }
-
 .img{
     width: 90px;
     height: 90px;
@@ -234,28 +135,22 @@ body{
     align-items: center;
     transition: .5s;
 }
-
 .skill-icon{
     width: 70px;
     padding-bottom: 30px;
 }
-
 .skill-title h3{
     color: #3f3f3f;
     margin-top: .5em;
     font-weight: bold;
 }
-
 .skill-box:hover > .skill-title:after, .skill-box:hover > .skill-title:before{
     width: 35px;
 }
-
 .skill-box:hover .img{
     transform: translateY(-10px);
 
 }
-
-
 .skill-title::after{
     content: '';
     position: absolute;
@@ -278,53 +173,18 @@ body{
     background-color: #013869;
     transition: .5s;
 }
-
-/*
-.barra{
-    height: 70px;
-    width: 400px;
-    text-align: center;
-    padding: 20px;
-    margin: 20px;
-}
-
-.barra h3{
-    font-weight: bold;
-    font-size: 20px;
-}
-
-
-.idioma1{
-    display: flex;
-    justify-content: center;
-    align-items: center;
-}
+/*HABILIDADES*//*HABILIDADES*//*HABILIDADES*//*HABILIDADES*//*HABILIDADES*//*HABILIDADES*/
 
 
 
-.idiomas p{
-    text-align: center;
-    width: 500px;
-}
-
-
-.idiomas{
-    display: grid;
-    place-items: center;
-    padding-top: 40px;
-    
-}
-
-.progress-bar{
-    background-color: #013869;
-
-}
-*/
 
 
 
-/* ---- IDIOMAS ---- */
 
+
+
+
+/*IDIOMAS*//*IDIOMAS*//*IDIOMAS*//*IDIOMAS*//*IDIOMAS*//*IDIOMAS*//*IDIOMAS*//*IDIOMAS*/
 .main{
     display: flex;
     justify-content: center;
@@ -340,7 +200,6 @@ body{
     flex-direction: column;
     align-items: center;
 }
-
 .circular-progress, .circular-progressDOS, .circular-progressTRES{
     position: relative;
     height:  250px;
@@ -351,7 +210,6 @@ body{
     align-items: center;
     justify-content: center;
 }
-
 .circular-progress::before, .circular-progressDOS::before, .circular-progressTRES::before{
     content: "";
     position: absolute;
@@ -360,25 +218,68 @@ body{
     border-radius: 50%;
     background-color: #fff;
 }
-
 .progress-value, .progress-valueDOS, .progress-valueTRES{
     position: relative;
     font-size: 50px;
     font-weight: 100px;
     color: black;
 }
+/*IDIOMAS*//*IDIOMAS*//*IDIOMAS*//*IDIOMAS*//*IDIOMAS*//*IDIOMAS*//*IDIOMAS*//*IDIOMAS*/
 
-.text{
-    font-size: 25px;
-    font-weight: 20px;
-    color: #050505;
+
+
+
+
+
+
+
+/*PROYECTOS*//*PROYECTOS*//*PROYECTOS*//*PROYECTOS*//*PROYECTOS*//*PROYECTOS*//*PROYECTOS*/
+#proyecto{
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
 
+#contenedor11 {
+    display: inline-flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    margin-right: 80px;
+    margin-left: 80px;
+}
+.contenedor_proyectos {
+    flex-basis: 33%;
+    box-sizing: border-box;
+}
+.card-img-top{
+    height: 300px;
+    width: 286px;
+    padding: 10px;
+    border-radius: 20px;
+}
+.title1{
+    padding: 20px;
+}
+.card{
+    padding: 50px;
+}
+.card-title{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+/*PROYECTOS*//*PROYECTOS*//*PROYECTOS*//*PROYECTOS*//*PROYECTOS*//*PROYECTOS*//*PROYECTOS*/
 
 
 
 
 
+
+
+
+
+/*RESPONSIVE*/
 @media screen and (max-width:800px){
     body{
         justify-content: center;
@@ -399,7 +300,6 @@ body{
         display: flex;
         flex-direction: column;
     }
-
 }
 
 
